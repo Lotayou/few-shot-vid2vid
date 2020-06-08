@@ -11,6 +11,12 @@ Pytorch implementation for few-shot photorealistic video-to-video translation. I
  NVIDIA Corporation  
  In Neural Information Processing Systems (**NeurIPS**) 2019  
 
+## License
+Copyright (C) 2019 NVIDIA Corporation. All rights reserved. 
+
+This work is made available under the Nvidia Source Code License (1-Way Commercial). To view a copy of this license, visit https://nvlabs.github.io/few-shot-vid2vid/License.txt
+
+
 ## Example Results
 - Dance Videos
 <p align='center'>
@@ -57,7 +63,7 @@ cd few-shot-vid2vid
 
 ### Dataset
 - Pose
-  - We use random dancing videos found on YouTube. We then apply DensePose / OpenPose to estimate the poses for each frame.
+  - We use random dancing videos found on YouTube to crease a YouTube Dancing Dataset. We then apply DensePose / OpenPose to estimate the poses for each frame. The video URLs and code to preprocess them can be found in `data/preprocess`. Please note that the copyright of the dataset belongs to the original owners.
 - Face
   - We use the [FaceForensics](http://niessnerlab.org/projects/roessler2018faceforensics.html) dataset. We then use landmark detection to estimate the face keypoints, and interpolate them to get face edges.
 - Street
